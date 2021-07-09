@@ -1,0 +1,49 @@
+[{
+    "_id": {
+      "$oid": "6096b2cd1f2c5b020462c3e1"
+    },
+    "name": "Mrigank k",
+    "email": "mrigankkashyap8@gmail.com",
+    "phone": 1234567890,
+    "password": "$2b$10$sU8.oMjMEX/J.V4XZex6rOkEW2.n5rsXP4Pfcn4amKY1hOnSCJWEu",
+    "grade": "A",
+    "class": 10,
+    "dateOfBirth": "2000-06-07",
+    "__v": 0
+},{
+    "_id": {
+      "$oid": "6096b4561f2c5b020462c3e2"
+    },
+    "name": "Ganesh Naik",
+    "email": "ganeshnaik@gmail.com",
+    "phone": 1234567899,
+    "password": "$2b$10$Drg.zzdkhBWUKZ9bVuqUlOvQU3v7bWomWx5aDtpd8yhrTxw/rav9C",
+    "grade": "B",
+    "class": 8,
+    "dateOfBirth": "2004-06-07",
+    "__v": 0
+},{
+    "_id": {
+      "$oid": "60be01e48c5e4d37003b7895"
+    },
+    "name": "Shivam k",
+    "email": "shivam@gmail.com",
+    "phone": 1236767890,
+    "password": "$2b$10$TEavRu2MdanwP7DwmjS7se08QEv8v9/1Tmld/myhEPA4Sq87KEg/m",
+    "grade": "C",
+    "class": 7,
+    "dateOfBirth": "2006-06-07",
+    "__v": 0
+},{
+    "_id": {
+      "$oid": "60be022d8c5e4d37003b7896"
+    },
+    "name": "Raman K",
+    "email": "raman@gmail.com",
+    "phone": 1239877890,
+    "password": "$2b$10$tIG0LcciM2GDDHEMm.R28.IMHMEdYLFFfhicjiq8Sh6bmnwtPNSoq",
+    "grade": "D",
+    "class": 9,
+    "dateOfBirth": "2002-06-07",
+    "__v": 0
+}]
