@@ -4,7 +4,6 @@ const passport = require('passport');
 const express = require("express");
 const router = express.Router();
 
-
 const isLoggedIn = (req,res,next)=>{
     if(req.user){
         next();
@@ -13,7 +12,6 @@ const isLoggedIn = (req,res,next)=>{
         res.sendStatus(401);
     }
 }
-
 
 router.use(cookieSession({
     name:'tuto-session',
@@ -27,6 +25,7 @@ router.use(passport.session());
 
 // API endpoint for sign-in with google
 router.get('/google',passport.authenticate('google', { scope: ['profile','email'] }));
+
 
 router.get('/google/callback', passport.authenticate('google', { failureRedirect: '/failed' }),
   function(req, res) {

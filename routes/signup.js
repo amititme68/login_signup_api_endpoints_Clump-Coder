@@ -12,7 +12,8 @@ router.post("/", async (req, res) => {
   // validation if user is not already registered
   let user = await User.findOne(
     { email: req.body.email } || { phone: req.body.phone }
-  ); // To work on this
+  );
+  
   if (user)
     return res.status(400).send(
         "Try any other email or phone number, this email or phone number is already registered!"

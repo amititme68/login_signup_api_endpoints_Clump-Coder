@@ -48,7 +48,11 @@ const userSchema = new mongoose.Schema(
         type: Date,
         required: true,
       },
-    },
+      resetLink:{
+        data : String,
+        default: ''
+      },
+    }, {timestamps:true}
   );
 
   userSchema.methods.generateAuthToken = function(){

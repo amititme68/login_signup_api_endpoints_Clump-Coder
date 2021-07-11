@@ -8,6 +8,8 @@ mongoose.set("useUnifiedTopology", true);
 const express = require("express");
 const router = express.Router();
 
+
+// API Endpoint for sign-in
 router.post("/", async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
@@ -19,10 +21,12 @@ router.post("/", async (req, res) => {
   if(!validPassword) return res.status(400).send("Invalid email or phone or password");
 
   const token = user.generateAuthToken();
-  res.send(token);  
+  res.header("x-auth-token", token).send("You have successfully signed in!");  
 
 });
 
+
+// Validation here with JOI
 function validate(user) {
     const schema = {
       email: Joi.string().regex(/^(([a-zA-Z0-9 _ - .]{1,255})+)@(([a-zA-Z0-9]{1,255})+).([a-z]{2,6})$/)
